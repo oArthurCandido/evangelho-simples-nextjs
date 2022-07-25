@@ -84,6 +84,7 @@ const Series = () => {
 
     getPlaylistList(playlistListUrl);
   }, []);
+  console.log(playlistList);
 
   return (
     <>

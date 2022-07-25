@@ -82,7 +82,6 @@ const Podcasts = () => {
     }
     setPlaylistList(podcasts);
   };
-
   useEffect(() => {
     const playlistListUrl = `${playlistUrl}?part=snippet&channelId=UC0lim5sJoP2UC4rZfd7-wJQ&maxResults=100&${apiKey}`;
 

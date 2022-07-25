@@ -7,7 +7,7 @@ const PlaylistCard = ({ playlist }) => {
   return (
     <div>
       <div>
-        <Link href={`/Podcasts/${playlist.id}`}>
+        <Link href={`/Playlists/${playlist.id}`}>
           <a >
             <h2>{`${playlist.snippet.title}`}</h2>
           </a>
