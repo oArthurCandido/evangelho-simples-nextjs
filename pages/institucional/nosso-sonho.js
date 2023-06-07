@@ -29,7 +29,7 @@ const Main = styled.div`
   }
   .textWork {
     position: relative;
-    text-indent: 1em;
+    /* text-indent: 1em; */
     visibility: visible;
   }
   .textWork > p {
@@ -42,10 +42,10 @@ function Dream(props) {
     <>
       <Header />
       <Main>
-        <section className="institutional">
+        <article className="institutional">
           <div className="contempt">
             <h2>Nosso Sonho</h2>
-            <p className="textWork">
+            <section className="textWork">
               <p>
                 A igreja que queremos ser, não importa se é pequena ou grande,
                 ela tem que ser simples.
@@ -127,9 +127,9 @@ function Dream(props) {
                 viva, a mais coerente que a gente conseguir ser.... e que o Rei
                 seja glorificado através de nós!
               </p>
-            </p>
+            </section>
           </div>
-        </section>
+        </article>
       </Main>
       <InstitutionalFooter />
     </>

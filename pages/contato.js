@@ -2,6 +2,8 @@ import React from 'react';
 import Header from '../src/components/Header';
 import styled from 'styled-components';
 import InstitutionalFooter from '../src/components/Footer/institutionalFooter';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const Main = styled.div`
   .institutional {
@@ -31,6 +33,14 @@ const Main = styled.div`
     text-indent: 1em;
     visibility: visible;
   }
+  .whatsBox {
+    margin: 1rem auto 0;
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+  }
 `;
 
 function Contact(props) {
@@ -41,29 +51,22 @@ function Contact(props) {
         <section className="institutional">
           <div className="contempt">
             <h2>Contato</h2>
-            <p className="textWork">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptates vel dolor hic commodi, doloremque cumque voluptatibus
-              fugiat, pariatur, ea quis ullam nostrum placeat ratione est veniam
-              vero adipisci officiis officia. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Vero quidem eaque accusantium
-              sapiente possimus autem magnam nisi? Esse quidem id nulla sit non.
-              Cumque, delectus non. Et porro fugit est. Lorem ipsum dolor sit
-              amet consectetur adipisicing elit. Minus animi harum iste ad,
-              amet, a corrupti quis eum et, corporis pariatur repellat!
-              Consequuntur velit maxime repudiandae et sunt sit aliquid? Lorem
-              ipsum dolor sit amet consectetur adipisicing elit. Iusto quod
-              assumenda repellendus, repudiandae, dolore voluptates inventore
-              impedit, fuga ut nesciunt natus molestias minus. Quod pariatur
-              eligendi quam nihil labore distinctio? Lorem ipsum dolor, sit amet
-              consectetur adipisicing elit. Quisquam debitis impedit dignissimos
-              dolore harum id distinctio repellat, maxime veritatis sint aliquid
-              natus delectus odit labore ex quo, sit possimus voluptates? Lorem
-              ipsum, dolor sit amet consectetur adipisicing elit. Possimus Lorem
-              ipsum dolor sit amet consectetur adipisicing elit. Voluptates vel
-              dolor hic commodi, doloremque cumque voluptatibus fugiat,
-              pariatur,.
-            </p>
+            <h4>Fale conosco pelo Whatsapp oficial do Evangelho Simples:</h4>
+            <div className="whatsBox">
+              <Link href="https://api.whatsapp.com/send?phone=5512992366230&text=Ol%C3%A1.%20Vim%20pelo%20site%20do%20Evangelho%20Simples.">
+                <a
+                  target="blank"
+                  href="https://api.whatsapp.com/send?phone=5512992366230&text=Ol%C3%A1.%20Vim%20pelo%20site%20do%20Evangelho%20Simples."
+                >
+                  <Image
+                    width={300}
+                    height={300}
+                    src="/images/whatsapp.png"
+                    alt=""
+                  />
+                </a>
+              </Link>
+            </div>
           </div>
         </section>
       </Main>

@@ -59,23 +59,37 @@ function MainNav(props) {
     <NavMain>
       <ul>
         <li>
-          <Link href="/series">
-            <a href="#">SÉRIES</a>
+          <Link
+            target="_blank"
+            href="https://www.youtube.com/@EvangelhoSimplesOficial/playlists"
+          >
+            <a
+              target="blank"
+              href="https://www.youtube.com/@EvangelhoSimplesOficial/playlists"
+            >
+              SÉRIES
+            </a>
           </Link>
         </li>
         <li>
-          <Link href="/podcasts">
-            <a href="#">PODCASTS</a>
+          <Link href="https://www.youtube.com/@EvangelhoSimplesOficial/podcasts">
+            <a
+              target="blank"
+              href="https://www.youtube.com/@EvangelhoSimplesOficial/podcasts"
+            >
+              PODCASTS
+            </a>
+          </Link>
+        </li>
+
+        <li>
+          <Link href="/institucional/nosso-sonho">
+            <a href="#">NOSSO SONHO</a>
           </Link>
         </li>
         <li>
-          <Link href="/contribuicao">
-            <a href="#">CONTRIBUIÇÃO</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="gabinete">
-            <a href="#">GABINETE ONLINE</a>
+          <Link href="/institucional/localizacao">
+            <a href="#">LOCALIZAÇÃO</a>
           </Link>
         </li>
         <li>

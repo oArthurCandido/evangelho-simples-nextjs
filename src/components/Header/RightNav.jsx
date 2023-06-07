@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import styled, {css} from 'styled-components';
+import styled, { css } from 'styled-components';
 
 
 const Ul = styled.ul`
@@ -57,25 +57,29 @@ const Ul = styled.ul`
 const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
-       <li>
-            <Link href='/institucional/filosofia'><a >FILOSOFIA DE MINISTÉRIO</a></Link>
-       </li>
-        <li>
-            <Link href='/institucional/o-que-cremos'><a >O QUE CREMOS</a></Link>
-        </li>
-        <li>
+      <li>
+        <Link href='/institucional/filosofia'><a >FILOSOFIA DE MINISTÉRIO</a></Link>
+      </li>
+      <li>
+        <Link href='/institucional/o-que-cremos'><a >O QUE CREMOS</a></Link>
+      </li>
+
+      {/* <li>
             <Link href='/institucional/pastores'><a>PASTORES</a></Link>
             </li>
             <li><Link href='/institucional/nossa-historia'><a>NOSSA HISTÓRIA</a></Link> </li>
         <li>
             <Link href='/institucional/ministerios'><a>MINISTÉRIOS</a></Link>
-        </li>
-        <li>
-            <Link href='/institucional/nosso-sonho'><a>NOSSO SONHO</a></Link>
-        </li>
-        <li>
-            <Link href='/institucional/localizacao'><a>LOCALIZAÇÃO</a></Link>
-        </li>
+        </li> */}
+      <li>
+        <Link href='/institucional/nosso-sonho'><a>NOSSO SONHO</a></Link>
+      </li>
+      <li>
+        <Link href='/institucional/localizacao'><a>LOCALIZAÇÃO</a></Link>
+      </li>
+      <li>
+        <Link href='/contribuicao'><a >CONTRIBUIÇÃO</a></Link>
+      </li>
     </Ul>
   )
 }
